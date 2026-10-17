@@ -1,0 +1,15 @@
+{
+  "num_nodes": 173,
+  "num_timesteps": 195,
+  "num_features": 3,
+  "feature_names": [
+    "flow_approx",
+    "occupancy",
+    "speed"
+  ],
+  "time_range": {
+    "start": "2026-08-02 11:33:59",
+    "end": "2026-08-03 08:23:59"
+  },
+  "interval_seconds": 300
+}

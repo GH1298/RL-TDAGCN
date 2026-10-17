@@ -1,0 +1,116 @@
+# ============================================================
+# RL-TDAGCN .gitignore
+# ============================================================
+
+# ----- Python 缓存 -----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+.pytest_cache/
+.mypy_cache/
+
+# ----- 虚拟环境 -----
+venv/
+venv_traffic/
+env/
+.venv/
+ENV/
+
+# ----- IDE / 编辑器 -----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ----- 系统文件 -----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ----- 模型权重文件（大文件，建议另行存储） -----
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+best_models/
+
+# ----- 大数据集文件 -----
+# 原始数据文件，建议通过数据下载脚本获取
+data/gaode/traffic_raw.json
+data/gaode/weather_raw.json
+data/gaode/traffic.npy
+data/gaode/weather_aligned.npy
+data/gaode/.collection.lock
+
+# PEMS08 数据（论文当前仅使用 PEMS04）
+data/PEMS08/
+
+# 大型压缩包
+*.tar.gz
+*.zip
+
+# ----- 日志文件 -----
+logs/
+v3_logs/
+v4_logs/
+*.log
+*.txt
+experiment_log_fixed.txt
+parallel_v2_log.txt
+v3_parallel_log.txt
+local_verify_output.txt
+
+# ----- 旧版本 / 备份结果 -----
+parallel_results/
+serial_results/
+v3_results/
+all_results.tar.gz
+
+# ----- HTML 报告（可由脚本重新生成） -----
+rl-tdagcn-experiment-report/
+v3_analysis_report.html
+v4_experiment_analysis.html
+
+# ----- 临时 / 调试脚本 -----
+ping.py
+test_api_connection.py
+quick_validate.py
+fix_rl_buffer.py
+local_verify_fix.py
+verify_all.py
+train_gaode_cpu.py
+start_collection.py
+start_collection.ps1
+download_traffic_data.py
+
+# ----- Markdown 草稿 -----
+note.md
+v3_cloud_guide.md
+v3_improvement_plan.md
+v4_optimization_guide.md
+v5_optimization_guide.md
+
+# ----- Shell 脚本（云主机部署用，可选保留） -----
+# cloud_setup.sh
+# run_all.sh
+# run_all_fixed.sh
+# run_parallel.sh
+# run_parallel_v2.sh
+# run_v3_parallel.sh
+# run_v4_parallel.sh
+
+# ----- 图片 -----
+logs/test_ablation.png
+logs/test_curves.png
+
+# ----- Jupyter Notebook 检查点 -----
+.ipynb_checkpoints/
+
+# ----- 其他 -----
+*.bak
+*.tmp
